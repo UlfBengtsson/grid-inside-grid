@@ -1,0 +1,80 @@
+body {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main-content"
+    "footer";
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  background-color: #18bb64;
+}
+
+#main-content {
+  grid-area: main-content;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #18adbb;
+}
+
+.basic-content {
+  display: grid;
+  grid-template-areas:
+    "intro  intro  intro"
+    "aside box  box"
+    "aside box  box";
+  grid-gap: 10px;
+  background-color: #1872bb;
+  padding: 10px;
+}
+
+.another-content {
+  display: grid;
+  grid-template-areas:
+    "aside  headline  headline"
+    "aside  clips  clips"
+    "aside  clips  clips";
+  grid-gap: 10px;
+  background-color: #1872bb;
+  padding: 10px;
+}
+
+.intro {
+  grid-area: intro;
+  background-color: #a2bb18;
+  padding: 10px;
+}
+
+.box {
+  grid-area: box;
+  background-color: #bb1818;
+  padding: 10px;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #b518bb;
+  padding: 10px;
+}
+
+.headline {
+  grid-area: headline;
+  background-color: #8d6bb4;
+  padding: 10px;
+}
+
+.clips {
+  grid-area: clips;
+  background-color: #111f6e;
+  padding: 10px;
+}
