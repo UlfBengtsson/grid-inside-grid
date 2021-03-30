@@ -16,6 +16,11 @@ body {
 header {
   grid-area: header;
   background-color: #18bb64;
+  display: grid;
+  grid-template-areas: "logo links links links rightnav";
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
 }
 
 #main-content {
@@ -77,4 +82,22 @@ footer {
   grid-area: clips;
   background-color: #111f6e;
   padding: 10px;
+}
+
+header > h4 {
+  grid-area: logo;
+}
+
+header > ol {
+  grid-area: links;
+  list-style-type: none;
+}
+
+header > ol > li {
+  float: left;
+  padding: 12px;
+}
+
+header > a {
+  grid-area: rightnav;
 }
